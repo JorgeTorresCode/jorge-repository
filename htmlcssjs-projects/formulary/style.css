@@ -1,0 +1,104 @@
+* {
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(48, 48, 48);
+    margin: 50px 50px;
+    padding: 20px;
+    border: 15px solid black;
+    outline: 3px solid rgb(64, 168, 99);
+}
+
+input::placeholder, textarea::placeholder {
+    font-size: 20px;
+}
+
+.form {
+    min-width: 350px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    background-color: rgb(48, 48, 48);
+    box-sizing: border-box;
+    border: none;
+    color: white;
+    border-bottom: 3px solid rgb(64, 168, 99);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.form textarea {
+    min-height: 140px;
+    resize: none;
+    font-family: sans-serif;
+}
+
+.form-img {
+    flex: 1;
+
+    display: flex;
+
+}
+
+.form-img img {
+    width: 50%;
+    min-width: 170px;
+    margin: auto;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+button {
+    width: 100%;
+    background-color: black;
+    border: none;
+}
+
+button p {
+    color: white;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: rgb(16, 16, 16);
+}
+
+button:active {
+    background-color: rgb(30, 30, 30);
+}
+
+@media only screen and (max-width: 600px) {
+    .form {
+        min-width: 60%;
+    }
+
+    .form-img img {
+        min-width: 100px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .flex-container {
+        max-width: 1182px;
+        margin: auto;
+        margin-top: 50px;
+        box-sizing: border-box;
+    }
+}

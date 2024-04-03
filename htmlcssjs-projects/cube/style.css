@@ -1,0 +1,57 @@
+.container {
+    perspective: 1000px;
+}
+
+.cube {
+    margin: 200px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-30deg);
+    animation: rotation 10s infinite linear;
+}
+
+.side {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+}
+
+.front.side {
+    background-color: red;
+    transform: translateZ(125px);
+}
+
+.back.side {
+    background-color: blue;
+    transform: translateZ(-125px);
+}
+
+.top.side {
+    background-color: yellow;
+    transform: translateY(-125px) rotateX(90deg);
+}
+
+.bottom.side {
+    background-color: green;
+    transform: translateY(125px) rotateX(90deg);
+}
+
+.left.side {
+    background-color: purple;
+    transform: translateX(-125px) rotateY(90deg);
+}
+
+.right.side {
+    background-color: rgb(228, 99, 246);
+    transform: translateX(125px) rotateY(90deg);
+}
+
+@keyframes rotation {
+    0%, 100% { transform: rotateX(45deg) rotateY(45deg);}
+    25% { transform: rotateX(-45deg) rotateY(45deg);}
+    50% { transform: rotateX(-45deg) rotateY(-45deg);}
+    75% { transform: rotateX(45deg) rotateY(-45deg);}
+}

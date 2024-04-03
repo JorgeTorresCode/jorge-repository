@@ -1,0 +1,47 @@
+body {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.objects {
+    width: 700px;
+    font-size: 20px;
+}
+
+.object {
+    background: rgb(230, 230, 230);
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.object div {
+    padding: 20px;
+}
+
+.note {
+    flex-basis: 20px;
+    background: rgb(202, 202, 202);
+    font-weight: 700;
+    text-align: center;
+}
+
+.name {
+    flex-grow: 1;
+}
+
+.objects:first-child {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 220px) {
+    .object {
+        display: block;
+    }
+
+    .note {
+        height: 15px;
+        
+    }
+}

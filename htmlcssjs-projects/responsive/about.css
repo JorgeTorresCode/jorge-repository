@@ -1,0 +1,252 @@
+* {
+    font-size: 18px;
+}
+
+body {
+    background-color: lightblue;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.responsive-ul {
+    display: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+}
+
+.nav {
+    background-color: lightblue;
+    width: 100%;
+}
+
+.ul {
+    display: flex;
+    background-color: rgb(135, 172, 185);
+    margin: 0;
+    height: 45px;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.li {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.li a {
+    color: rgb(87, 87, 87);
+    text-decoration: none;
+}
+
+.li i {
+    color: rgb(87, 87, 87);
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.li:hover > a, .li:hover > i {
+    color: black;
+}
+
+.article {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(400px, 1fr) minmax(50px, 250px);
+    background-color: lightblue;
+    padding-top: 45px;
+}
+
+.aside {
+    grid-column: 2 / 3;
+    background: rgb(118, 164, 177);
+    border-left: 1px solid black;
+}
+
+video {
+    width: 100%;
+}
+
+.main {
+    padding: 10px;
+}
+
+.bar {
+    padding: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .article {
+        grid-template-columns: minmax(100px, 1fr) minmax(50px, 250px);
+    }
+
+    .content {
+        grid-column: 1 / 4;
+    }
+
+    .aside {
+        grid-column: 1 / 4;
+        border-top: 3px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        border-left: none;
+    }
+
+    .bar {
+        width: 260px;
+
+    }
+
+    video {
+        padding-top: 10px;
+    }
+
+    .responsive-button-container {
+        height: 48px;
+        width: 100%;
+        font-size: 30px;
+        background-color: rgb(135, 172, 185);
+        position: absolute;
+        margin-top: -64px;
+        border-bottom: 3px solid black;
+    }
+    
+    .responsive-button {
+        padding: 9px 10px;
+        text-align: left;
+    }
+    
+    .responsive-button i {
+        font-size: 25px;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    nav {
+        height: 37px;
+        width: 100%;
+        background-color: rgb(88, 112, 121);
+    }
+
+    .responsive-ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        margin-top: 37px;
+        padding-top: 27px;
+    }
+
+    .responsive-container {
+        margin-top: -15px;
+        margin-left: 10px;
+    }
+
+    .responsive-li {
+        position: absolute;
+        display: inline-block;
+        display: none;
+    }
+
+    #responsive-li-start {
+        margin-top: 5px;
+    }
+
+    #responsive-li-about {
+        margin-top: 45px;
+    }
+
+    #responsive-li-money {
+        margin-top: 85px;
+    }
+
+    #responsive-li-help {
+        margin-top: 125px;
+    }
+
+    .responsive-li i {
+        color: rgb(87, 87, 87);
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+    }
+
+    .responsive-li a {
+        color: rgb(87, 87, 87);
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 180px) {
+
+    .ul {
+        display: none;
+    }
+
+    nav {
+        height: 37px;
+        width: 100%;
+        background-color: rgb(88, 112, 121);
+    }
+
+    .responsive-ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 40px;
+        margin-top: 37px;
+        padding-top: 27px;
+    }
+
+    .responsive-container {
+        margin-top: -15px;
+    }
+
+    .responsive-li a {
+        display: none;
+    }
+
+    #responsive-li-start {
+        margin-top: 5px;
+    }
+
+    #responsive-li-about {
+        margin-top: 45px;
+    }
+
+    #responsive-li-money {
+        margin-top: 85px;
+    }
+
+    #responsive-li-help {
+        margin-top: 125px;
+    }
+
+    .responsive-li i {
+        color: rgb(87, 87, 87);
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+    }
+
+    .responsive-li a {
+        color: rgb(87, 87, 87);
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,45 @@
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+}
+
+.mango {
+    overflow: hidden;
+    width: 200px;
+    height: 250px;
+    border-radius: 50% 50% 50% 50% / 90px 90px 90px 90px;;
+    background: radial-gradient(circle, yellow, orange);
+}
+
+.branch {
+    width: 15px;
+    height: 40px;
+    background: greenyellow;
+    border-radius: 40%;
+    display: inline-block;
+}
+
+.leaf {
+    position: relative;
+    z-index: -1;
+}
+
+.leaf1 {
+    width: 10px;
+    height: 20px;
+    background-color: green;
+    border-radius: 0px 50px 0px 50px / 30px 30px 30px 30px;
+    transform: rotate(-45deg) translateX(-20px) translateY(5px);
+}
+
+.leaf2 {
+    width: 10px;
+    height: 20px;
+    background-color: green;
+    border-radius: 0px 50px 0px 50px / 30px 30px 30px 30px;
+    transform: rotate(45deg) translateX(2px) translateY(-20px);
+}
