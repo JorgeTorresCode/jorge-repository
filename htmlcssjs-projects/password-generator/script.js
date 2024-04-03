@@ -1,40 +1,3 @@
-const output = document.getElementById("output");
-const copyButton = document.getElementById("copy-button");
-const lengthInput = document.getElementById("length");
-const upperCaseInput = document.getElementById("uppercase");
-const lowerCaseInput = document.getElementById("lowercase");
-const numbersInput = document.getElementById("numbers");
-const symbolsInput = document.getElementById("symbols");
-const generateButton = document.getElementById("generate-button");
-
-const letters = "abcdefghijklmnopqrstuvwxyz".split('');
-const numbers = "1234567890".split('');
-const symbols = "[]()/._,?¿!¡@*&#^`'+-><${}".split('');
-
-function randomUpperCase() {
-    let randomNum = Math.floor(Math.random() * letters.length);
-    let randomLetter = letters[randomNum].toUpperCase();
-    return randomLetter;
-};
-
-function randomLowerCase() {
-    let randomNum = Math.floor(Math.random() * letters.length);
-    let randomLetter = letters[randomNum];
-    return randomLetter;
-};
-
-function randomNumber() {
-    let randomNum = Math.floor(Math.random() * numbers.length);
-    let randomNumber = numbers[randomNum];
-    return randomNumber;
-};
-
-function randomSymbol() {
-    let randomNum = Math.floor(Math.random() * symbols.length);
-    let randomSymbol = symbols[randomNum];
-    return randomSymbol;
-};
-
 generateButton.addEventListener("click", () => {
     let functions = [randomLowerCase, randomUpperCase, randomNumber, randomSymbol];
     let result = ""
@@ -79,3 +42,40 @@ copyButton.addEventListener("click", () => {
         navigator.clipboard.writeText(output.textContent);
     }
 })
+
+const output = document.getElementById("output");
+const copyButton = document.getElementById("copy-button");
+const lengthInput = document.getElementById("length");
+const upperCaseInput = document.getElementById("uppercase");
+const lowerCaseInput = document.getElementById("lowercase");
+const numbersInput = document.getElementById("numbers");
+const symbolsInput = document.getElementById("symbols");
+const generateButton = document.getElementById("generate-button");
+
+const letters = "abcdefghijklmnopqrstuvwxyz".split('');
+const numbers = "1234567890".split('');
+const symbols = "[]()/._,?¿!¡@*&#^`'+-><${}".split('');
+
+function randomUpperCase() {
+    let randomNum = Math.floor(Math.random() * letters.length);
+    let randomLetter = letters[randomNum].toUpperCase();
+    return randomLetter;
+};
+
+function randomLowerCase() {
+    let randomNum = Math.floor(Math.random() * letters.length);
+    let randomLetter = letters[randomNum];
+    return randomLetter;
+};
+
+function randomNumber() {
+    let randomNum = Math.floor(Math.random() * numbers.length);
+    let randomNumber = numbers[randomNum];
+    return randomNumber;
+};
+
+function randomSymbol() {
+    let randomNum = Math.floor(Math.random() * symbols.length);
+    let randomSymbol = symbols[randomNum];
+    return randomSymbol;
+};
