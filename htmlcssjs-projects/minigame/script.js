@@ -1,24 +1,3 @@
-p1.addEventListener("click", () => {
-    handleClick("p1");
-    bolita1.style.display = "block";
-    bolita1.style.animation = "puno .7s";
-    barraVida();
-});
-
-p2.addEventListener("click", () => {
-    handleClick("p2");
-    bolita1.style.display = "block";
-    bolita1.style.animation = "espada .7s";
-    barraVida();
-});
-
-p3.addEventListener("click", () => {
-    handleClick("p3");
-    bolita1.style.display = "block";
-    bolita1.style.animation = "bola .7s";
-    barraVida();
-});
-
 class Pokemon {
     constructor (_nombre, _velocidad, _ataque) {
         this.nombre = _nombre;
@@ -108,3 +87,24 @@ function barraVida() {
         }
     }, 700)
 }
+
+p1.addEventListener("click", () => {
+    handleClick("p1");
+    bolita1.style.display = "block";
+    bolita1.style.animation = "puno .7s";
+    barraVida();
+});
+
+p2.addEventListener("click", () => {
+    handleClick("p2");
+    bolita1.style.display = "block";
+    bolita1.style.animation = "espada .7s";
+    barraVida();
+});
+
+p3.addEventListener("click", () => {
+    handleClick("p3");
+    bolita1.style.display = "block";
+    bolita1.style.animation = "bola .7s";
+    barraVida();
+});
