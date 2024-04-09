@@ -1,4 +1,5 @@
 import pyautogui
+import time
 import keyboard
 
 color = [(0, 0, 0), (172, 172, 172)]
@@ -8,3 +9,6 @@ while True:
     
     if pixel1 in color or pixel2 in color:
         keyboard.press("up")
+        time.sleep(0.2)
+    
+    time.sleep(0.01)
