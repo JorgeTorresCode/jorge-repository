@@ -1,4 +1,4 @@
-def root(*points):
+def perimeter(*points):
     perimeter = 0
     for i in range(len(points)):
         x1, y1 = points[i]
@@ -14,4 +14,4 @@ c = (4, 10)
 d = (8, 7)
 e = (4, 5)
 
-root(a, b, c, d, e)
+perimeter(a, b, c, d, e)
