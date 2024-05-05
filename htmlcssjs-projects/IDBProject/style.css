@@ -1,0 +1,53 @@
+body, h2, div, input, button {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.addnames {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#name, #add {
+    padding: 4px 8px;
+}
+
+.showname {
+    display: grid;
+    grid-template-columns: minmax(100px, 300px) 1fr;
+    margin: 4px 40px;
+    border: 8px solid rgb(255, 255, 255);
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+.options {
+    display: flex;
+}
+
+.options button {
+    background: transparent;
+    border: none;
+    margin: 4px 10px;
+    font-size: 15px;
+}
+
+.imposible {
+    color: rgb(212, 212, 212);
+}
+
+.posible {
+    color: rgb(40, 136, 255);
+}
+
+.posible:hover {
+    color: rgb(77, 157, 255);
+}
+
+.delete:hover {
+    color: rgb(147, 147, 147);
+}
+
+.showname h2 {
+    outline: none;
+}
