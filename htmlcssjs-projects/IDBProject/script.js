@@ -18,20 +18,24 @@ IDBRequest.addEventListener('error', ()=> {
     console.log("an error has occurred with the database");
 });
 
-document.getElementById("add").addEventListener("click", ()=> {
-    let namer = document.getElementById("name").value;
+document.getElementById("add").addEventListener("click", () => {
+    let nameInput = document.getElementById("name");
+    let namer = nameInput.value;
     if (namer.length > 0) {
         if (document.querySelector(".posible") != undefined) {
             if (confirm("There are unsaved items: You want to continue?")) {
                 addObj({name: namer});
+                nameInput.value = "";
                 readObj();
             }
         } else {
-            addObj({name: namer});
+            addObj({ name: namer });
+            nameInput.value = "";
             readObj();
         }
     }
-})
+});
+
 
 const addObj = obj => {
     const IDBData = getIDBData("readwrite");

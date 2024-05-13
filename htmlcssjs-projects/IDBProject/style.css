@@ -7,10 +7,12 @@ body, h2, div, input, button {
 .addnames {
     margin-top: 40px;
     margin-bottom: 30px;
+    user-select: none;
 }
 
 #name, #add {
     padding: 4px 8px;
+    user-select: none;
 }
 
 .showname {
