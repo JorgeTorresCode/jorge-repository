@@ -18,7 +18,7 @@ IDBRequest.addEventListener('error', ()=> {
     console.log("an error has occurred with the database");
 });
 
-document.getElementById("add").addEventListener("click", () => {
+function addName() {
     let nameInput = document.getElementById("name");
     let namer = nameInput.value;
     if (namer.length > 0) {
@@ -34,7 +34,7 @@ document.getElementById("add").addEventListener("click", () => {
             readObj();
         }
     }
-});
+};
 
 
 const addObj = obj => {
@@ -103,19 +103,27 @@ const HTMLElementname = (id, namer)=> {
 
     h2.addEventListener("keyup", ()=> {
         saveButton.classList.replace("imposible", "posible");
-    })
+    });
 
     saveButton.addEventListener('click', ()=> {
         if (saveButton.className == "posible") {
             modifyObj(id, {name: h2.textContent});
             saveButton.classList.replace("posible", "imposible");
-        }
-    })
+        };
+    });
 
     deleteButton.addEventListener("click", ()=> {
         deleteObj(id);
         document.querySelector(".names").removeChild(container)
-    })
+    });
 
     return container;
 }
+
+function handle(event) {
+    if (event.key === "Enter") {
+        addName();
+    };
+};
+
+document.getElementById("add").addEventListener("click", addName);
