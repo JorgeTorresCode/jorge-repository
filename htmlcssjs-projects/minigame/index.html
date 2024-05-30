@@ -4,42 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="minigame.css">
+    <link rel="stylesheet" href="start-menu.css">
   </head>
   <body>
-      <div class="container">
-        <div class="display">
-          <div class="bolita" id="bolita1"></div>
-          <div class="bolita" id="bolita2"></div>
-          <div class="pokemon" id="pokemon1">
-            <div class="cabeza" id="cabeza-pokemon1"></div>
-            <div class="boca" id="boca1"></div>
-          </div>
-          <div class="pokemon"  id="pokemon2">
-            <div class="cabeza" id="cabeza-pokemon2"></div>
-            <div class="boca" id="boca2"></div>
-          </div>
-          <div class="barras-container">
-            <div class="barra" id="b1">
-              <div class="vida" id="vida1"></div>
+    <div class="container">
+      <div class="display">
+        <div class="minigame">
+            <div class="bolita" id="bolita1"></div>
+            <div class="bolita" id="bolita2"></div>
+            <div class="pokemon" id="pokemon1">
+              <div class="cabeza" id="cabeza-pokemon1"></div>
+              <div class="boca" id="boca1"></div>
             </div>
-            <div class="barra" id="b2">
-              <div class="vida" id="vida2"></div>
+            <div class="pokemon"  id="pokemon2">
+              <div class="cabeza" id="cabeza-pokemon2"></div>
+              <div class="boca" id="boca2"></div>
             </div>
-          </div>
+            <div class="barras-container">
+              <div class="barra" id="b1">
+                <div class="vida" id="vida1">
+                </div>
+              </div>
+              <div class="barra" id="b2">
+                <div class="vida" id="vida2">
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="buttons-container">
-          <button class="puños" id="p1">
-            <image src="puño.svg">
-          </button>
-          <button class="puños" id="p2">
-            <image src="espada.svg">
-          </button>
-          <button  class="puños" id="p3">
-            <image src="bola.svg">
-          </button>
+        <div class="start-menu">
+            <div class="start-buttons-container">
+              <button class="start-button jugar-btn"><h1>Jugar</h1></button>
+              <button class="start-button listapersonajes-btn"><h1>Lista personajes</h1></button>
+              <button class="start-button "><h1></h1></button>
+            </div>
+        </div>
+        <div class="listapersonajes-menu">
+          <div class="pokemon-card">
+            <h1>bulbasaur</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="">
+          </div>
+          <div class="pokemon-card">
+            <h1>ivysaur</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" alt="">
+          </div>
+          <div class="pokemon-card">
+            <h1>charmeleon</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="">
+          </div>
+          <div class="pokemon-card">
+            <h1>squirtle</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="">
+          </div>
+          <div class="pokemon-card">
+            <h1>blastoise
+            </h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png" alt="">
+          </div>
+          <div class="pokemon-card">
+            <h1>pikachu</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="">
+          </div>
+          <div class="pokemon-card">
+            <h1>nidoqueen</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png" alt="">
+          </div>
+          <div class="pokemon-card">
+            <h1>ninetales</h1>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png" alt="">
+          </div>
         </div>
       </div>
-    <script src="script.js"></script>
+      <div class="buttons-container">
+        <button class="puños" id="p1">
+          <image src="Svg's/puño.svg">
+        </button>
+        <button class="puños" id="p2">
+          <image src="Svg's/espada.svg">
+        </button>
+        <button  class="puños" id="p3">
+          <image src="Svg's/bola.svg">
+        </button>
+      </div>
+    </div>
+    <script src="minigame.js"></script>
+    <script src="start-menu.js"></script>
   </body>
 </html>

@@ -1,0 +1,76 @@
+.minigame, .puños {
+    display: none;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.start-buttons-container h1 {
+    font-family: fantasy;
+    margin: 0;
+    font-size: 33px;
+}
+
+.start-button {
+    margin: 10px 0;
+    width: 900px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgb(250, 188, 72);
+    transition: .2s;
+    border: none;
+    user-select: none;
+}
+
+.start-button:hover{
+    background-color: rgb(255, 166, 0);
+    transition: .2s;
+}
+
+.start-button:active{
+    background-color: rgb(228, 148, 0);
+    transition: .2s;
+}
+
+.listapersonajes-menu {
+    display: none;
+    flex-direction: row;
+}
+
+.pokemon-card {
+    user-select: none;
+    width: 150px;
+    height: 200px;
+    background: rgb(228, 148, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 10px;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.pokemon-card:hover {
+    background: rgb(199, 129, 0);
+}
+
+.pokemon-card h1 {
+    margin: 0;
+
+}
+
+img {
+    margin: 0;
+    width: 140px;
+}
