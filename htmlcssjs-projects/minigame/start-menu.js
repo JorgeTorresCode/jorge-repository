@@ -7,4 +7,3 @@ listaPersonajesBtn.addEventListener("click", ()=> {
     startMenu.style.display = "none";
     listaPersonajesMenu.style.display = "flex";
 });
-
