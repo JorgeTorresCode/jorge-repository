@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 current_time = datetime.now().replace(second=0 ,microsecond=0)
 
-path = "Python//Projects//Diary//Diary.csv"
+path = "C:/Users/jorgi/OneDrive/Documentos/Git/jorge-repository/python-projects/diary/Diary.csv"
 df = pd.read_csv(path)
 
 

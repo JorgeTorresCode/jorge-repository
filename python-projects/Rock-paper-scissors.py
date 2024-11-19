@@ -13,23 +13,20 @@ def rock_paper_scissors():
         
         print("\nRock, paper or scissors?")
         user = input("Choose one: ")
+        status = False
         
-        if user == "1":
-            user = options[0]
+        for i in range(1,4):
+            if user == str(i):
+                user = options[i-1]
+                status = True
         
-        elif user == "2":
-            user = options[1]
-            
-        elif user == "3":
-            user = options[2]
-        
-        if user.lower() in options:
+        if status:
             break
         
         elif len(attempts) >= 4:
             print(colored("Attemps limit reached, closing the program","light_magenta"))
             exit()
-            
+        
         else:
             print(colored("Invalid answer","light_red"))
             attempts.append(1)
